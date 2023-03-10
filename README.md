@@ -1,2 +1,6 @@
-"Task 2. :
-Access Wargames labs available on the following link: https://overthewire.org/wargames/ and on level Bandit solve tasks up to level 10" 
+"Git task 3."
+
+ - Execute scripts from chapters: 13, 14 , 15, 16:
+ - Take screensoots of executed scripts;
+ 
+ - Scripts and screenshots are stored in separated folders.
