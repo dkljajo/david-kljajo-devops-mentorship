@@ -1,6 +1,5 @@
-"Git task 3."
+# AWS Mentorship
 
- - Execute scripts from chapters: 13, 14 , 15, 16:
- - Take screensoots of executed scripts;
- 
- - Scripts and screenshots are stored in separated folders.
+## Sta je AWS / Cloud / DevOps / SRE / PE Engineer	:
+ - Technical skills - Svicarski noz [razni alati]. Git kao osnova - GitHub zadaci i taskovi.
+	- Soft skills [Team player, Communication skills, Leadership, Self Confidence, Accountability, Problem Solving, Time Management, Resilience]. 
