@@ -1,13 +1,13 @@
 # Homework 7
 
 ## Ovdje je slika browsera gdje se vidi da sam pristupio ec2 instanci
-- ![./aplikacija.png](./aplikacija.png)
+- ![aplikacija.png](./homework7/aplikacija.png)
 <br/>
 
 ## Ovdje je slika EC2 dashboarda gdje se vidi da sam stopirao  ec2 instancu
-- ![./instance-stopped.png](./instance-stopped.png)
+- ![instance-stopped.png](./homework7/instance-stopped.png)
 <br/>
 
 ## CloudWatch Alarm koji sam kreirao za evidenciju troškova
-- ![./CloudWatch.png](./CloudWatch.png)
+- ![CloudWatch.png](./homework7/CloudWatch.png)
 
