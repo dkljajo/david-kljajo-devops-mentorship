@@ -1,28 +1,14 @@
-# AWS Mentorship
+# david-kljajo-devops-mentorship
 
-## Sta je AWS / Cloud / DevOps / SRE / PE Engineer	:
-## Technical skills - Svicarski noz [razni alati]. 
-- Git kao osnova - GitHub zadaci i taskovi.
-- Linux;
-- Bash skripte;
-- Racunarske mreze;
-- Web serveri;
-- Sigurnost;
-- Docker;
-- Infrastrucure As Code (IAC):
-- AWS Cloud;
-- Continuous Integration / Continuous Delivery (CI/CD);
-- K8S,
-- Monitoring;
-- Programiranje
-- Arhitektura sistema,...
+# Homework 7
 
- ## Soft skills :
- - Team player, 
- - Communication skills, 
- - Leadership, 
- - Self Confidence, 
- - Accountability, 
- - Problem Solving, 
- - Time Management, 
- - Resilience. 
+## Ovdje je slika browsera gdje se vidi da sam pristupio ec2 instanci
+- ![aplikacija.png](./aplikacija.png)
+
+
+## Ovdje je slika EC2 dashboarda gdje se vidi da sam stopirao  ec2 instancu
+- ![instance-stopped.png](./instance-stopped.png)
+
+
+## CloudWatch Alarm koji sam kreirao za evidenciju troškova
+- ![CloudWatch.png](./CloudWatch.png)
