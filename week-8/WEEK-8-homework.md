@@ -10,7 +10,8 @@ Description: TASK-7: Autoscaling Group and Load Balancer
 -  Simulirana visoka dostupnost na nacin da su terminirane instance.
 - Simuliran CPU load.
 
-![graph-dijagram](/devops-mentorship-program/03-march/week-5-140323/files/hp-server.jpeg)
+-Graf infrastrukture:
+![graph-dijagram](./Graf.jpg)
 
 
 
