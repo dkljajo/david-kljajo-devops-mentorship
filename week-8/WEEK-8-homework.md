@@ -13,5 +13,10 @@ Description: TASK-7: Autoscaling Group and Load Balancer
 -Graf infrastrukture:
 ![graph-dijagram](./Graf.jpg)
 
+<br/>
+
+- Load balancer:
+![graph-dijagram](./Load-balancer.jpg)
+
 
 
