@@ -22,39 +22,63 @@ Description: TASK-8
 - ![list-record](./2.png)
 <br/>
 `sudo certbot certonly --nginx`
-- ![10][./10.png)
 <br/>
-` ls -la /etc/letsencrypt/live/david-kljajo.awsbosnia.com/`
+
+- ![10](./10.png)
+
+<br/>
+
+`ls -la /etc/letsencrypt/live/david-kljajo.awsbosnia.com/`
+
 - ![lets-encrypt](./13.png)
 
 <br/>
 
 - ![web1](./17.png)
+
 <br/>
 `echo | openssl s_client -showcerts -servername david-kljajo.awsbosnia.com -connect david-kljajo.awsbosnia.com:443 2>/dev/null | openssl x509 -inform pem -noout -text`
+
 - ![20](./20.png)
+
 <br/>
+
 `openssl s_client -showcerts -connect david-kljajo.awsbosnia.com:443`
+
 - ![21](./21.png)
+
 <br/>
+
 `cd /etc/letsencrypt/live/david-kljajo.awsbosnia.com/`
+
 - ![24](./24.png)
+
 <br/>
 
 - ![node-app](./25.png)
-<br/>
-`node-app.conf # comment line in node-app.conf`
-- ![graph-dijagram](./30.png)
--<br/>
-`echo | openssl s_client -showcerts -servername david-kljajo.awsbosnia.com -connect david-kljajo.awsbosnia.com:443 2>/dev/null | openssl x509 -inform pem -noout -text`
-- ![echo-openssl](./50.png)
+
 <br/>
 
-- ![listeners](./70.png)
+`node-app.conf # comment line in node-app.conf`
+
+- ![graph-dijagram](./30.png)
+
+-<br/>
+`echo | openssl s_client -showcerts -servername david-kljajo.awsbosnia.com -connect david-kljajo.awsbosnia.com:443 2>/dev/null | openssl x509 -inform pem -noout -text`
+
+- ![echo-openssl](./50.png)
+
 <br/>
- - ![web-amazon](./80.png)
+
+- ![70](./70.png)
+
 <br/>
- - ![ami-image](./90.png)
+
+- ![80](./80.png)
+ 
+<br/>
+
+- ![90](./90.png)
 
 
 
