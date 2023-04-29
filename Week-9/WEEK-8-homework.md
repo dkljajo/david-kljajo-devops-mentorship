@@ -11,15 +11,7 @@ Description: TASK-8
 - Simuliran CPU load.
 
 <br/>
-- Graf infrastrukture:
 
-
-![graph-dijagram](./Graf.jpg)
-
-- Load Balancer DNS record:
-
-![balancer](./Load-balancer.jpg)
-<br/>
 
 `$ aws route53 change-resource-record-sets --hosted-zone-id Z3LHP8UIUC8CDK --change-batch '{"Changes":[{"Action":"CREATE","ResourceRecordSet":{"Name":"david-kljajo.awsbosnia.com.","Type":"A","TTL":60,"ResourceRecords":[{"Value":"44.263.200.253"}]}}]}'`
 - ![create-dns](./1.png)
