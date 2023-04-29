@@ -25,7 +25,7 @@ Description: TASK-8
 - ![10][./10.png)
 <br/>
 ` ls -la /etc/letsencrypt/live/david-kljajo.awsbosnia.com/`
-- ![lets-encrypt](/home/david/Desktop/13.png)
+- ![lets-encrypt](./13.png)
 
 <br/>
 
@@ -50,11 +50,11 @@ Description: TASK-8
 - ![echo-openssl](./50.png)
 <br/>
 
- - ![listeners](./70.png)
+- ![listeners](./70.png)
 <br/>
-  - ![web-amazon](./80.png)
+ - ![web-amazon](./80.png)
 <br/>
-  - ![ami-image](./90.png)
+ - ![ami-image](./90.png)
 
 
 
