@@ -67,7 +67,7 @@ Koristite AWS dokumentaciju ukoliko naiđete na bilo kakve probleme konfigurisan
 - 
 <br/>
 
-![web-route53](./web-route53)
+![web-route53](./web-route53.png)
 
 <br/>
 
