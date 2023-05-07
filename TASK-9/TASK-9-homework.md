@@ -75,3 +75,9 @@ Koristite AWS dokumentaciju ukoliko naiđete na bilo kakve probleme konfigurisan
 <br/>
 
 ![configroute53](./configroute53.png)
+
+link s3 endpoint: http://david-kljajo-devops-mentorship-program-week-11.s3-website-us-east-1.amazonaws.com/
+
+link cloudfront DNS :  https://d1swhmkqlv0snp.cloudfront.net/
+
+link route53 DNS : https://david-kljajo.awsbosnia.com/
