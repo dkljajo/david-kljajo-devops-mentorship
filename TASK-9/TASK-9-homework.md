@@ -45,7 +45,7 @@ Koristite AWS dokumentaciju ukoliko naiđete na bilo kakve probleme konfigurisan
 
 
 
-- Zadatak 1:
+- Zadatak 1: policy and bucket
 
 ![policy](./policy.png)
 
@@ -55,7 +55,7 @@ Koristite AWS dokumentaciju ukoliko naiđete na bilo kakve probleme konfigurisan
 
 <br/>
 
-- Zadatak 2:
+- Zadatak 2: s3 endpoint
 - 
 <br/>
 
@@ -63,8 +63,11 @@ Koristite AWS dokumentaciju ukoliko naiđete na bilo kakve probleme konfigurisan
 
 <br/>
 
-- Zadatk 3: 
-- 
+- Zadatk 3: cloudfront DNS, route53 DNS, and Route53 config
+<br/>
+
+![cloudfront-dns](./cloudfront-dns.png)
+
 <br/>
 
 ![web-route53](./web-route53.png)
