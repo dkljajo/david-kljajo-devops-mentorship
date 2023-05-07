@@ -45,3 +45,18 @@ Koristite AWS dokumentaciju ukoliko naiđete na bilo kakve probleme konfigurisan
 
 
 
+- Zadatak 1:
+
+![policy](./policy.png)
+<br/>
+![bucket](./bucket.png)
+<br/>
+- Zadatak 2:
+<br/>
+![s3endpoint](./s3endpoint.png)
+<br/>
+- Zadatk 3: 
+<br/>
+![webroute53](./webroute53.png)
+<br/>
+![configroute53](./configroute53.png)
