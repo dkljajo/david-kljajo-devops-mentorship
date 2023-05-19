@@ -141,3 +141,32 @@ Python, Ruby , Java, Go, C#, Rust,...
 3. Trigeri baza podataka: DynamoDB, Streamovi, Lambda;
 4. Serverless CRON jobovi: Event Bridge;
 5. Procesiranje podataka u realnom vremenu sa Lambdom: (Kinesis + Lambda)
+
+* * *
+# 3. AWS Lambda - part 2
+
+- Lambda moze funkcionirati u 2 mrezna moda:
+1. javni (public) mod - koji je default;
+2. VPC (Virtual Private Cloud).
+
+1. Na javnom pristupu moze pristupiti javnim AWS servisima i javnom Internetu.
+- Javni mrezni pristup pruza najbolje performanse jer specificni korisnicki VPC nije potreban. Ali zato Lambda funkcije nemaju pristup VPC orjentiranim servisima, jedino u slucaju ako imaju javnu IP adresu i dozvoljene permisijevanjskom pristupu, i to je veliki hendikep.
+2. Ako je Lamda konfigurirana unutar VPC-ija i subneta, Lambda funkcije se pridrzavaju svih VPC mreznih pravila i mogu pristupiti svim resursima unutar tog VPC. Ali zato ne mogu pristupiti svim resursima van VPC, osim u slucaju preko gateway endpointa ili preko NAT Gateway-a.
+<br/>
+- Lambda se u VPC tretira kao bilo koji drugi resurs unutar VPC-ija.
+<br/>
+### Sigurnost Lambda funkcija:
+
+- Po defaultu Lambda ima "egzekucijsku" rolu za sigurnost, slicnu kao sto ima EC2 instanca svoju rolu.
+- Ali Lambda ima i policy resursa koji kontroliraji:
+- STA servisi i nalozi mogu POKRENUTI od Lambda funkcija.
+- Permisije se mogu rucno promjenuti kroz CLI ili API.
+
+### Logovi
+
+- Lambda za logove koristi: Cloudwatch, Cloudwatch logs i X-Ray
+- Cloudwatch Logs koji zahtjevaju permisije preko EXecution role;
+Logovi iz Lambda egzekucija idu na CLoudwatch Logs.
+- Metrke su pohranjene u Cloudwatch.
+- Lambda moze biti integrirana sa X-Ray.
+
