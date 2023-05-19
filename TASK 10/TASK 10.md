@@ -110,4 +110,34 @@ I to je kljucan dio **serverless arhitekture.**
 * * *
 # 3. AWS Lambda - part 1
 
-- Lambda funkcionira kao usluga ili brzi protokol, a to znaci da sa njom pruzamo specijalizirani kratki kod Lambdi i onda ona preuzima brigu da ga pokrece i naplacuje ti samo ono sto potrosis 
+- Lambda funkcionira kao usluga ili brzi protokol, a to znaci da sa njom pruzamo specijalizirani kratki kod Lambdi i onda ona preuzima brigu da ga pokrece i naplacuje ti samo ono sto potrosis.
+- Lambda funkcija je u biti dio koda koji ona pokrece i svaka Lambda funkcija uzima podrzano vrijeme izvrsavanja (npr. : Python 3.8.)
+- Znaci da su funkcije preuzete i pokrenute u okruzenje vremena izvrsavanja, koje je specificno kreirano da pokrece kod koristeci odredzeno vrijeme izvrsavanja i odredjeni programski jezik.
+- Kada kreiramo Lambda funkciju ujedno definiramo i odredjene resurse koji su pokrenuti u vremenu izvrsavanja , tako da alociramo direktno i odredjeni dio memorije i na osnovu te memorije i odredjeni dio CPU-a.
+- Lambda naplacuje samo period vremena koji ta funkcija koristi.
+- Lambda je kljucni dio serverless ili event-driven arhitekture.
+- Kada zamisljamo kako Lambda funkcionira treba je zamisliti kao kod plus sve asocirane biblioteke i konfiguracije.
+- Kada pokrenemo Lambdu definiramo i jezik u kojem je ta funkcija napisana.
+- Kad je Lambda funkcija pozvana , ustvari se dogadja da paket za "deplojanje" je preuzet i izvrsen u njegovom vremenu izvrsavanja.
+- Lambda podrzava mnogo programskih jezika:
+Python, Ruby , Java, Go, C#, Rust,...
+- Docker je u biti suprotan Lambdi.
+- Lambda moze koristiti Docker slike, ali se to mora razlikovati od znacenja rijeci Docker, jer su to dvije potpuno razlicite stvari.
+- Docker se u biti odnosi na rad sa kontejnerima, tj. Docker sliku koristimo u okruzenju kontejnera , kao sto je ECS.
+- Svaki put kada je Lambda pozvana novo vrijeme izvrsavanja (runtime) je kreirano sa svim komponentama koje Lambda treba.
+- Lambda funkcije su stateless , sto znaci da nijedan podatak nije ostavljen iz prethodnog poziva funkcije.
+- Svaki put kada je Lambda pozvana, onda se kreira novi runtime (vrijeme izvrsavanja) .
+- Svaki put za Lambdu alociramo i odredjene resurse.
+- Mi sa Lambdom direktno kontroliramo alociranu memorijuod njene funkcije, ali tamo gdje je virtualni CPU alociran indirektno, sto zanci da vise memorije povlaci za sobom i vise virtualnog CPU kapaciteta.
+- Takodjer je alociran i odredjeni dio storage-a (hard disk), koji moze skalirati, ali to je samo trenutno (temporary).
+- Lambde mogu trajati do 900 sekundi ili 15 minuta, i to je jako bitan podatak.
+- Svaka Lambda funkcija ima i svoju Rolu, koju kacimo na specificnu funkciju.
+
+<br/>
+
+- Lambda USE CASES:
+1. Serverless aplikacije: S3, API Gateway, Lambda;
+2. Procesiranje dokumenata : S3, S3 Events, Lambda;
+3. Trigeri baza podataka: DynamoDB, Streamovi, Lambda;
+4. Serverless CRON jobovi: Event Bridge;
+5. Procesiranje podataka u realnom vremenu sa Lambdom: (Kinesis + Lambda)
