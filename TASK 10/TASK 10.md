@@ -153,8 +153,10 @@ Python, Ruby , Java, Go, C#, Rust,...
 - Javni mrezni pristup pruza najbolje performanse jer specificni korisnicki VPC nije potreban. Ali zato Lambda funkcije nemaju pristup VPC orjentiranim servisima, jedino u slucaju ako imaju javnu IP adresu i dozvoljene permisijevanjskom pristupu, i to je veliki hendikep.
 2. Ako je Lamda konfigurirana unutar VPC-ija i subneta, Lambda funkcije se pridrzavaju svih VPC mreznih pravila i mogu pristupiti svim resursima unutar tog VPC. Ali zato ne mogu pristupiti svim resursima van VPC, osim u slucaju preko gateway endpointa ili preko NAT Gateway-a.
 <br/>
+
 - Lambda se u VPC tretira kao bilo koji drugi resurs unutar VPC-ija.
 <br/>
+
 ### Sigurnost Lambda funkcija:
 
 - Po defaultu Lambda ima "egzekucijsku" rolu za sigurnost, slicnu kao sto ima EC2 instanca svoju rolu.
