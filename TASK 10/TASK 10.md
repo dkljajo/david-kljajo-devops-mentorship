@@ -32,7 +32,7 @@ Generalno, u monolitnoj arhitekturi moramo vertikalno skalirati sistem, jer sve 
 3. Najvazniji aspekti monolitne arhitekture je: da se dijelovi naplacuju zajedno, jer kapacitet sistema treba biti dovoljan da bi se pokretalo sve zajedno. 
 Zato oni moraju uvijek imati alocirane resurse, iako ih ne "konzumiraju" zajedno.
 <br/>
-- Za razliku od monolitne arhitekture imamo i **slojevitu arhitekturu**.
+- Za razliku od monolitne arhitekture imamo i slojevitu arhitekturu.
 Monolitna arhitektura je razdvojena u zasebne dijelove ili slojeve.
 Svaki od tih slojeva moze biti na istom serveru, ali i na razlicitim serverima. 
 U ovoj arhitekturi razlicite komponente su i dalje povezane zajedno, jer svaki od slojeva pokazuje na isti "endpoint" od drugog sloja.
@@ -172,3 +172,44 @@ Logovi iz Lambda egzekucija idu na CLoudwatch Logs.
 - Metrke su pohranjene u Cloudwatch.
 - Lambda moze biti integrirana sa X-Ray.
 
+* * *
+# 5. AWS Lambda - part 3
+
+Postoje 3 metode za pozivanje Lambde :
+1. Sinkrono pozivanje;
+2. Asinkrono pozivanje;
+3. Event-source mapiranje.
+
+1. Kod sinkronog pozivanja Lambde preko CLI/API pozivamo Lambda funkcije, prosljedjujuci podatke i cekajuci odgovor.
+Lambda tada vraca podatke bili oni uspjesni ili neuspjesni.
+Moguce je i pozivanje Lambde kroz API Gateway , ali je princip isti:
+rezultat se vraca kao uspjesan ili neuspjesan i vracen je za vrijeme request-a.
+Sinkorna komunikacija je izvrsena kada covjek direktno ili indirektno poziva Lambda funkciju.
+2. Asinkrona komunikacija se tipicno dogadja kada AWS servis poziva Lambda funkciju.
+- Primjer je kada S3 poziva Lambdu, koji tada ne ceka nikakav odgovor.
+Dogadjaj (event ) je generiran i S3 prestaje pracenje.
+Recimo da Lambda koristi DynamoDB kao nerelacionu bazu podataka.
+Ako procesiranje dogadjaja padne, Lambda ce pokusati ponovno izmedju 0 i 2 puta kao sto je i podeseno.
+- Inace, Lambda koristi logiku ponavljanja.
+- Kod mora biti "idempotent" , a to znaci da koliko god se puta izvrsava, izlaz mora biti isti.
+- Idealno bi bilo kada bi Lambda zavrsila u pozeljnom stanju (desired state).
+- Novi feature Lambde je mogucnost da kreira destinacije (SQS, SNS, Lambda i Event Bridge), gdje uspjesan ili neuspjesan dogadjaj moze biti poslan.
+3. Event Source mapiranje
+- Ono je tipicno uradjeno za strimanje ili redove (queues).
+- Primjer je kada  Kinesis strimanje podataka posalje batch iz izvora u Event Source mapping, te ga onda prosljedjuje kao batch dogadjaja Lambdi.
+- 
+<br/>
+
+### Lambda verzije
+
+- Mozemo imati verzije funkcije Lambda: V1, V2, V3,...
+- Verzija je u biti: kod + konfiguracija Lambda funkcije.
+- Verzije su nepromjenjive - jednom kad je publicirana nikad se vise ne mjenja i ima svoj ARN.
+- $Latest - pokazuje na zadnju verziju.
+- Aliasi se mogu mjenjati i pokazuju na odredjenu verziju, npr: DEV, STAGE, PROD.
+- Kada je Lambda pozvana (recimo iz S3), taj koncept ekzekucije mora biti napravljen i kofiguriran.
+Prvo se kreira okruzenje, a onda se skida zadnja verzija programskog jezika (npr: Python 3.8).
+Zatim se skida paket deploymenta i instalira se - i taj proces se zove COLD START (cca. 100 mili sekundi).
+Poslije slijedi proces koji se zove WARM START, koji ne treba pravljenje okruzenja ili skidanje paketa, itd.
+Tu onda dogadjaj (Event) pocinje odmah procesiranje (cca: 1-2 mili sekunde).
+Moze se tada upotrijebiti proces "Provisioned concurrency" da se nebi stvarao COLD START vise puta i on kreira i sacuvava WARM START kontekst , koji je spreman za upotrebu i tako znacajno unapredjuje brzinu samog starta.
