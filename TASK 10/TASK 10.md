@@ -213,3 +213,28 @@ Zatim se skida paket deploymenta i instalira se - i taj proces se zove COLD STAR
 Poslije slijedi proces koji se zove WARM START, koji ne treba pravljenje okruzenja ili skidanje paketa, itd.
 Tu onda dogadjaj (Event) pocinje odmah procesiranje (cca: 1-2 mili sekunde).
 Moze se tada upotrijebiti proces "Provisioned concurrency" da se nebi stvarao COLD START vise puta i on kreira i sacuvava WARM START kontekst , koji je spreman za upotrebu i tako znacajno unapredjuje brzinu samog starta.
+
+* * *
+# 6. CLOUDWATCH EVENTS & EVENT BRIDGE
+
+- Cloudwatch Events daje skoro real-time strimove sistemskih dogadjaja koji objasnjavaju promjene u AWS produktima i servisima.
+- Event Bridge je servis koji zamjenjuje Cloudwatch Events.
+- Moze izraditi sve kao i Cloudwatch Events, ali moze i 3-rd party i kastomizirane aplikacije .
+- Oba dijele istu baznu arhitekturu, ali AWS forsira migraciju na Event Bridge.
+- On moze odraditi neki servis za neki period vremena (slicno kao CRON).
+- Event Bridge je u biti Cloudwatch verzija 2.
+- Oba koriste defaultni Event Bus za korisnicki profil.
+- U Event Bridge se mogu dodati i dodatni bus-ovi.
+- Pravila prate ulazne dogadjaje (events) ili mogu biti Shedules (sto je slicno CRON-u u Linuxu).
+- 
+<br/>
+
+- Primjer:
+- Kada EC2 instanca promjeni stanje iz stopiranog u pokrenuto i  u Event Busu imamo vise takvih pokrenutih instanci , tada Event Bridge nadgleda sve dogadjaje (event-e)
+- Event je u formi JSON podatka, sto takodjer ukljucuje koja je instanca promjenila svoje stanje.
+
+ * *
+# 7. Automated EC2 Control using LAMBDA and EVENTS
+- - TO DO
+
+
