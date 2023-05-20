@@ -143,7 +143,7 @@ Python, Ruby , Java, Go, C#, Rust,...
 5. Procesiranje podataka u realnom vremenu sa Lambdom: (Kinesis + Lambda)
 
 * * *
-# 3. AWS Lambda - part 2
+# 4. AWS Lambda - part 2
 
 - Lambda moze funkcionirati u 2 mrezna moda:
 1. javni (public) mod - koji je default;
