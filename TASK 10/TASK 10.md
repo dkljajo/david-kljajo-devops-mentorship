@@ -238,7 +238,7 @@ Moze se tada upotrijebiti proces "Provisioned concurrency" da se nebi stvarao CO
 - - TO DO
 
  * *
-# 9. SERVERLESS arhitektura
+# 8. SERVERLESS arhitektura
 
 - **Serverless** nije samo jos jedan obicni pojam. Serverless je vise softverska arhitektura, nego hardverska.
 - Svi koji rade na AWS cloudu na nacin Serverless ciljaju da upravljaju sa sto manje servera, pa da onda budu sto manji troskovi.
