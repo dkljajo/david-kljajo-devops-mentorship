@@ -237,4 +237,33 @@ Moze se tada upotrijebiti proces "Provisioned concurrency" da se nebi stvarao CO
 # 7. Automated EC2 Control using LAMBDA and EVENTS
 - - TO DO
 
+ * *
+# 9. SERVERLESS arhitektura
+
+- **Serverless** nije samo jos jedan obicni pojam. Serverless je vise softverska arhitektura, nego hardverska.
+- Svi koji rade na AWS cloudu na nacin Serverless ciljaju da upravljaju sa sto manje servera, pa da onda budu sto manji troskovi.
+- Serverless svoju arhitekturu najvise temelji na mikroservisima i event-driven arhitekturi.
+- U Serverless je glavni cilj da razbijemo aplikaciju na sto vise manjih dijelova sto je to moguce, pa cak i dalje od samih mikroservisa !
+- Tada su aplikacije kolekcije malih i specijaliziranih funkcija.
+- Aplikacije se pokrecu u Stateless i kratkotrajnim okruzenjima.
+- Razlog zasto je Lambda jeftina je : zato sto je ona **skalabilna**
+- Sve je Event-Driven (pokrenuto dogadjajima) , a to znaci:
+- **Nista nije pokrenuto dok za to nema potrebe .**
+- Lambda kao servis se placa, bazirano na trajanju njene egzekucije.
+- Serverless bi trebao biti veoma blizu besplatne cijene, dok se ne dogodi neki dogadjej u tom okruzenju .
+- Serverless bi trebao koristiti kad je to god moguce managed (upravljajuce) servise, tako da ne moramo praviti svoje.
+- U serverlessu je glavni cilj da koristimo servise kad je god to moguce i da pisemo sto kraci kod, te koristimo FaaS za svaku potrebu koju procesiranje treba, i zatim sve te dijelove zajedno iskoristimo da bi kreirali finalnu aplikaciju.
+
+<br/>
+
+![4](./4.png)
+
+- U primjeru se vidi da je pomocu staticne web stranice -> Google Identity Provider, Cognito i S3 Bucket u koji stavimo nas video nam omogucavaju da kao Solution Arhitekti u biti ne trebamo upravljati arhitekturom nikako, u smislu kreiranja EC2 instanci, vec je to sve automatizirano koristeci managed (upravljajuce) servise.
+- Dogadjaj koji smo kreirali pokrece Lambduda procesira taj video.
+A onda Lambda kreira job (posao) sa Elastic Transcoder, koji je upravljani servis od AWS.
+- Elastic Transcoder zatim transkodira taj video u razlicite velicine i sprema to u DynamoDB.
+- Drugi dio je kada korisnik poziva novu Lambda Funkciju, koja direktno komunicira sa Transcode Bucketom i DynamoDB bazom.
+- U stvarnom okruzenju bi bio koristen jos i API Gateway izmedju korisnika i Lambda funkcije da zastiti od mogucih malicioznih napada hackera sa Interneta.
+- Tu nemamo puno troskova i samoupravljajucih resursa.
+
 
