@@ -267,3 +267,32 @@ A onda Lambda kreira job (posao) sa Elastic Transcoder, koji je upravljani servi
 - Tu nemamo puno troskova i samoupravljajucih resursa.
 
 
+* *
+# 9. Simple Notification Service (SNS)
+
+- SNS je visoko dostupan, trajan i siguran servis za poruke (messages).
+- To je javni AWS servis, sto znaci mreznu konektivnost sa javnim AWS enpoint-ima.
+- Najveci benefit je to da je dostupan svugdje sto ima pristup Internetu.
+- SNS u sustini koordinira slanje i prihvacanje poruka.
+- Poruke su payload-i manji od 256 KB.
+- SNS Topic je bitna stvar , jer je to bazni entitet SNS-a (permisije i konfihguracija).
+- SNS ima koncept Publisher-a, što je u biti nesto sto salje poruke prema Topic-u
+- Topic ima svoje Subscribers (pretplatnike) koji primaju poruke.
+- Subscribers mogu biti:
+HTTP(S) endpointi, Email adresa, SQS queues, Mobile notifikacija, SMS poruke, pa cak i sama Lambda.
+- SNS se koristi preko AWS produkata i servisa.
+
+<br/>
+
+![7](./7.png)
+
+- Poruke se salju u Topic, pa ih prihvataju Subscribers gdje se moze staviti Filter koji onda limitira te poruke da bi ih mogao primiti samo relevantan Subscriber za tu poruku.
+- Koristeci FANOUT je odlican nacin slanja jedne poruke u SNS Topic koja reprenzetira jedan procesirajuci opseg posla (workload) i da ga ondaprebaci na vise redova.
+
+<br/>
+
+- SNS pruza Status dostave (ukljucujuci HTTP, Lambda, SQS) prema pretplatnicima.
+- SNS pruza Delivery Retries (ponavljanja) - sto znaci pouzdanu dostavu.
+- SNS je visoko dostupan i sklabilan ali samo u jednoj regiji.
+- Server enkripcija (SSE) je jos jedna bitna odlika SNS.
+
