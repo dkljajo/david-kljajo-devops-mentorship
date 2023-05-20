@@ -176,9 +176,9 @@ Logovi iz Lambda egzekucija idu na CLoudwatch Logs.
 # 5. AWS Lambda - part 3
 
 Postoje 3 metode za pozivanje Lambde :
-1. Sinkrono pozivanje;
-2. Asinkrono pozivanje;
-3. Event-source mapiranje.
+- Sinkrono pozivanje;
+- Asinkrono pozivanje;
+- Event-source mapiranje.
 
 1. Kod sinkronog pozivanja Lambde preko CLI/API pozivamo Lambda funkcije, prosljedjujuci podatke i cekajuci odgovor.
 Lambda tada vraca podatke bili oni uspjesni ili neuspjesni.
