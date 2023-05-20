@@ -296,3 +296,39 @@ HTTP(S) endpointi, Email adresa, SQS queues, Mobile notifikacija, SMS poruke, pa
 - SNS je visoko dostupan i sklabilan ali samo u jednoj regiji.
 - Server enkripcija (SSE) je jos jedna bitna odlika SNS.
 
+* *
+# 10. STEP FUNKCIJE
+- Some problems with Lambda:
+1. Lambda je FaaS (Function-as-a-Service).
+2. Lambda ima 15 minuta ogranicenje njene egzekucije.
+3. Posto se Lambda funkcije mogu povezati, pozivanjem druge Lambda funkcije- u teoriji mozemo dobiti dodatnih 15 minuta , ali to onda postaje komplicirano kod skaliranja.
+4. Runtime okruzenja Lambde su po prirodi Stateless.
+
+<br/>
+
+### STATE MACHINES
+
+- State machines imaju serverless workflow: START -> STATES -> END
+- States (stanja) su stvari koja se dogadjajuunutar State machines.
+- State machine je zamisljena da radi neku aktivnost ili neki flow (slijed) koji sadrzi mnogo individualnih komponenti.
+- Maksimalno vrijeme trajanja State Machines je 1 godina.
+-  Standard workflow traje 1 godinu.
+-  Express workflow moze posluziti za IOT, striming podataka, procesiranje i transformaciju podataka.
+
+<br/>
+
+- State machines se generalno koriste za backend procesiranje.
+
+- Amazon State Language se koristi za predloske (templates) i bazira se na JSON-u.
+- Za permisije se koriste IAM role.
+
+<br/>
+
+Vrste stanja (states):
+
+1. Uspjelo (succed) i neuspjelo(fail);
+2. cekanje (wait);
+3. izbor (choice);
+4. paralelno stanje (parallel);
+5. map;
+6. Task stanje (Lambda, Batch, DynamoDB, ECS, SNS, SQS, Glue, SageMaker, Step Funkcije,..)
