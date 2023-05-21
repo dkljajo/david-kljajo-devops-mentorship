@@ -332,3 +332,60 @@ Vrste stanja (states):
 4. paralelno stanje (parallel);
 5. map;
 6. Task stanje (Lambda, Batch, DynamoDB, ECS, SNS, SQS, Glue, SageMaker, Step Funkcije,..)
+
+
+# 11. API Gateway 101
+
+- API Gateway je servis koji nam omogucava da kreirate i upravljate API-jima.
+- API je aplikacijski programski interfejs i to je nacin na koji aplikacije komuniciraju medjusobno.
+- API Gateway se ponasa kao Endpoint ili Entry point za aplikacije da mogu komunicirati sa servisima.
+- Arhitekturalno se nalazi izmedju aplikacija i integracija (backend servisa koji pruzaju funkcionalnost tog API-ja).
+- API je visoko dostupan, skalabilan, upravlja autorizacijom , kesiranjem, transformacijama, omogucava direktnu integraciju sa AWS servisima i jos mnogo toga...
+- API Gateway moze povezati servise/endpoint-e u AWS-u ili on-premise serverima.
+- API Gateway moze pruziti :HTTP APIs, REST APIs i Websocket APIs.
+
+<br/>
+
+![10](./10.png)
+
+<br/>
+
+- API Gatewy podrzava dosta metoda autentifikacije:
+1. API Gateway moze koristiti Cognito skupove korisnika za autentifikaciju.
+2. API Gatewey moze biti prosiren da koristi Lambda baziranu autentifikaciju.
+
+
+ ![12](./12.png)
+
+<br/>
+
+### API Gateway tipovi Endpointa:
+
+1. Edge-optimizirani (koji su rutirani najblizem Cloudfront POP);
+2. Regionalni (klijenti su u istoj regiji);
+3. Privatni (Endpointi su dostupni samo u VPC-u preko endpoint interfejsa);
+
+<br/>
+
+API Gateway Stages:
+
+ ![13](./13.png)
+ 
+ <br/>
+ 
+ ### API Gatewey greske (errors):
+ 
+ - 4XX - Client greske ;
+ - 5XX -Server greske
+
+1. 400 - los zahtjev;
+2. 403 - nije dozvoljen pristup;
+3. 502 - bad gateway izuzetak;
+4. 503 - Servis nije dostupan;
+5. 504 - Greska integracije.
+
+<br/>
+
+### API Gateway - keširanje
+
+ ![14](/home/david/Desktop/Task-10/14.png)
