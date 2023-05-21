@@ -355,7 +355,7 @@ Vrste stanja (states):
 2. API Gatewey moze biti prosiren da koristi Lambda baziranu autentifikaciju.
 
 
- ![12](./12.png)
+![12](./12.png)
 
 <br/>
 
@@ -369,7 +369,7 @@ Vrste stanja (states):
 
 API Gateway Stages:
 
- ![13](./13.png)
+![13](./13.png)
  
  <br/>
  
