@@ -344,7 +344,6 @@ Vrste stanja (states):
 - API Gateway moze povezati servise/endpoint-e u AWS-u ili on-premise serverima.
 - API Gateway moze pruziti :HTTP APIs, REST APIs i Websocket APIs.
 
-<br/>
 
 ![10](./10.png)
 
@@ -388,4 +387,4 @@ API Gateway Stages:
 
 ### API Gateway - keširanje
 
- ![14](/home/david/Desktop/Task-10/14.png)
+ ![14](./14.png)
