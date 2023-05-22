@@ -408,10 +408,65 @@ API Gateway Stages:
 * *
 # 12. Build a Serverless App
 
-- TO DO
+![s1](./serverless1.png)
 
 <br/>
 
+![s2](./serverless2.png)
+
+<br/>
+
+![s3](./serverless3.png)
+
+<br/>
+
+![s4](./serverless4.png)
+
+<br/>
+
+![s5](./serverless5.png)
+
+<br/>
+
+![s6](./serverless6.png)
+
+<br/>
+
+![s7](./serverless7.png)
+
+<br/>
+
+![s8](./serverless8.png)
+
+<br/>
+
+![s9](./serverless9.png)
+
+<br/>
+
+![s10](./serverless10.png)
+
+<br/>
+
+![s11](./serverless11.png)
+
+<br/>
+
+![s12](./serverless12.png)
+
+<br/>
+
+![s13](./serverless13.png)
+
+<br/>
+
+![s14](./serverless14.png)
+
+<br/>
+
+![s15](./serverless15.png)
+
+<br/>
 
 * *
 # 13. Simple Queue Service (SQS)
@@ -452,7 +507,7 @@ API Gateway Stages:
 - Enkripcija (KMS) i enkripcija u tranzitu;
 
 * *
-# 15. SQS Delay Queues
+# 14. SQS Delay Queues
 
 - Visibility Timeout se generalno koristi za ispravak greski i automatsko **reprocesiranje**.
 - Delay Queue (kasnjenje reda) je znacajno razicit od Visibility Timeout , jer poruke pocinju u nevidljivom stanju za taj vremenski period.
