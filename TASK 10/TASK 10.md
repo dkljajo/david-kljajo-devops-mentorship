@@ -388,3 +388,51 @@ API Gateway Stages:
 ### API Gateway - keširanje
 
  ![14](./14.png)
+ 
+ 
+* *
+# 12. Build a Serverless App
+
+- TO DO
+
+<br/>
+
+
+* *
+# 13. Simple Queue Service (SQS)
+
+- SQS je javna , potpuno upravljana i visoko dostupna usluga redova (queues):
+1. Standardni redovi;
+2. FIFO redovi.
+
+<br/>
+
+- Poruke mogu biti velike do 256 KB (mogu se linkovati na velike podatke);
+- Primljene poruke su u biti skrivene ( Vsibility Timeout );
+- Ako se poruka ne pojavi na vrijeme, ona ce se sigurno pojaviti nakon ponovnog pokusaja ili ce biti eksplicitno izbrisana;
+- Kocept "Dead-Letter queues" mogu biti iskoristeni za poruke koje imaju neki problem kod dostavljanja;
+- ASG (Auto Scaling Groups) mogu skalirati i pozvati Lambdu na osnovu velicine reda (queue).
+
+<br/>
+
+- SQS workflow sa ASG:
+
+![15](/home/david/Desktop/Task-10/15.png)
+
+<br/>
+
+- SNS i SQS sa Fanout (realni primjer iz prakse):
+
+![16](/home/david/Desktop/Task-10/16.png)
+
+<br/>
+
+- SQS:
+
+- Standardna - najmanje jedna (at-least-once) dostava;
+- FIFO - garantira poredak poruka dozvoljava egzaktno jednu poruku odjednom;
+- FIFO performanse : 3 000 poruka po sekundi sa batchevima, ili 300 poruka po sekundi bez batcheva;
+- Naplacuje se po jednom zahtjevu : 1 - 10 poruka do 64 KB ukupno.
+- Kratke (short) i Duge (Wait Time Seconds) poruke postoje u SQS;
+- Enkripcija (KMS) i enkripcija u tranzitu;
+
