@@ -235,7 +235,22 @@ Moze se tada upotrijebiti proces "Provisioned concurrency" da se nebi stvarao CO
 
  * *
 # 7. Automated EC2 Control using LAMBDA and EVENTS
-- - TO DO
+
+- Napravit cemo dvije EC2 instance i odredjeni broj Lambda funkcija koje ce sa njima komunicirati na razlicite nacine (jedna stopira instance , 1 pokrece instnace i finalna ce cuvati instance tj. brinuti se da se ne zaustave):
+
+![20](./lambdaStartStop.png)
+
+![21](./lambda_function1.png)
+
+![22](./lambda_function2.png)
+
+![23](./lambda_success.png)
+
+<br/>
+
+- Ovo je primjer Event-Driven workflow-a, tj. kako Lambda reagira kad se nesto dogodi unutar AWS racuna.
+
+![24](./lambda_function3.png)
 
  * *
 # 8. SERVERLESS arhitektura
