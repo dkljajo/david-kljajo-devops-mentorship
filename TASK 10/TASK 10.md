@@ -417,13 +417,13 @@ API Gateway Stages:
 
 - SQS workflow sa ASG:
 
-![15](/home/david/Desktop/Task-10/15.png)
+![15](./15.png)
 
 <br/>
 
 - SNS i SQS sa Fanout (realni primjer iz prakse):
 
-![16](/home/david/Desktop/Task-10/16.png)
+![16](./16.png)
 
 <br/>
 
