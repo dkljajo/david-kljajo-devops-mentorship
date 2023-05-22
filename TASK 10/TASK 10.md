@@ -436,3 +436,13 @@ API Gateway Stages:
 - Kratke (short) i Duge (Wait Time Seconds) poruke postoje u SQS;
 - Enkripcija (KMS) i enkripcija u tranzitu;
 
+* *
+# 15. SQS Delay Queues
+
+- Visibility Timeout se generalno koristi za ispravak greski i automatsko **reprocesiranje**.
+- Delay Queue (kasnjenje reda) je znacajno razicit od Visibility Timeout , jer poruke pocinju u nevidljivom stanju za taj vremenski period.
+Kada kasnjenje (delay) istekne, poruke ce postati vidljive u tom redu (queue).
+- Message timers su dobri za konfiguraciju SQS redova , minimalno je 0 a maksimalno 15 minuta.
+- Delay Queues se genralno koriste kada imate potrebu napraviti kasnjenje (delay) u procesiranju za nasu aplikaciju.
+
+![18](./18.png)
