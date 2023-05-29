@@ -42,12 +42,13 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
-- bash script
+
 
 ![4](./4.png)
 
 <br/>
 
+- bash script
 
 ![5](./5.png)
 
