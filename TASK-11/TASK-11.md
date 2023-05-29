@@ -72,8 +72,9 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 ![10](./10.png)
 
 <br/>
-`ASSETURL="https://static.us-east-1.prod.workshops.aws/public/442d5fda-58ca-41f0-9fbe-558b6ff4c71a/assets/workshop-assets.zip"; wget -O gitflow.zip "$ASSETURL"
-`
+
+`ASSETURL="https://static.us-east-1.prod.workshops.aws/public/442d5fda-58ca-41f0-9fbe-558b6ff4c71a/assets/workshop-assets.zip"; wget -O gitflow.zip "$ASSETURL"`
+
 ![12](./12.png)
 
 <br/>
