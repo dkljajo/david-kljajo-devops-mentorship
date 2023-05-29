@@ -54,7 +54,7 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
-`bash resize`
+`bash resize.sh 30`
 
 
 ![6](./6.png)
