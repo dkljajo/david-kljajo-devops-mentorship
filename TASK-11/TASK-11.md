@@ -78,9 +78,11 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 ![12](./12.png)
 
 <br/>
-`unzip gitflow.zip -d gitflow-workshop/`
+
+` unzip gitflow.zip -d gitflow-workshop/ `
 
 ![13](./13.png)
+
 <br/>
 
 `cd gitflow-workshop`
