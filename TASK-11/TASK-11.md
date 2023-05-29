@@ -101,7 +101,7 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 ### Create Elastic Beanstalk Application
 
-- `aws cloudformation create-stack --template-body file://envcreate.yaml --parameters file://parameters.json --capabilities CAPABILITY_IAM --stack-name gitflow-eb-master
+`aws cloudformation create-stack --template-body file://envcreate.yaml --parameters file://parameters.json --capabilities CAPABILITY_IAM --stack-name gitflow-eb-master`
 
 ![16](./16.png)
 
