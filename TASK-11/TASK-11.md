@@ -28,9 +28,11 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
-## 1.Master Branch
+## Master Branch
 
-### 1.1 Elastic Beanstalk
+### Elastic Beanstalk
+
+- Elastic Beanstalk is a service for deploying and scaling web applications and services.
 
 - To simplify the process of setting up and configuring EC2 instances for this tutorial, you will spin up a nodejs environment using AWS Elastic Beanstalk. Elastic Beanstalk lets you easily host web applications without needing to launch, configure, or operate virtual servers on your own. It automatically provisions and operates the infrastructure (e.g. virtual servers, load balancers, etc.) and provides the application stack (e.g. OS, language and framework, web and application server, etc.)
 
@@ -107,7 +109,9 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
-### Lambda
+### AWS Lambda
+
+- AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you
 
 <br/>
 
@@ -120,6 +124,8 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 <br/>
 
 ### CloudFormation
+
+- AWS CloudFormation is a service that gives developers and businesses an easy way to create a collection of related AWS and third-party resources, and provision and manage them in an orderly and predictable fashion.
 
 <br/>
 
@@ -172,6 +178,8 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 ![28](./28.png)
 
 ## CodePipeline
+
+- AWS CodePipeline is a continuous delivery service that enables you to model, visualize, and automate the steps required to release your software.
 
 <br/>
 
