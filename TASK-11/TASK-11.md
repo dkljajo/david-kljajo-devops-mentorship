@@ -61,6 +61,7 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
+`df -h`
 
 ![7](./7.png)
 
