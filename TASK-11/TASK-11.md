@@ -111,7 +111,7 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
-![40][./40.png)
+![40](./40.png)
 
 <br/>
 
