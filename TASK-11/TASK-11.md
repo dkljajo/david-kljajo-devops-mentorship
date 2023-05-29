@@ -42,29 +42,27 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
-<br/>
-`df -h`
 
 ![4](./4.png)
 
 <br/>
-`df -h`
+
 
 ![5](./5.png)
 
 <br/>
-`df -h`
+
 
 ![6](./6.png)
 
 <br/>
-`df -h`
+
 
 ![7](./7.png)
 
 <br/>
 
-- `git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/gitflow-workshop`
+
 
 ![10](./10.png)
 
