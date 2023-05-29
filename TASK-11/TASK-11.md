@@ -24,7 +24,7 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 - In this module you will use AWS Cloudformation to set up your application and the infrastructure associated with it. You will leverage AWS Elastic Beanstalk to simplify things.
 
-![1](/home/david/Desktop/1.png)
+![1](./1.png)
 
 <br/>
 
@@ -36,7 +36,7 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
-![2](/home/david/Desktop/2.png)
+![2](./2.png)
 
 - Stage 1: Create Code Commit Repo
 
@@ -45,54 +45,59 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 <br/>
 `df -h`
 
-![4](/home/david/Desktop/4.png)
+![4](./4.png)
 
 <br/>
 `df -h`
 
-![5](/home/david/Desktop/5.png)
+![5](./5.png)
 
 <br/>
 `df -h`
 
-![6](/home/david/Desktop/6.png)
+![6](./6.png)
 
 <br/>
 `df -h`
 
-![7](/home/david/Desktop/7.png)
+![7](./7.png)
 
 <br/>
 
 - `git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/gitflow-workshop`
 
-![10](/home/david/Desktop/10.png)
+![10](./10.png)
 
 <br/>
 `ASSETURL="https://static.us-east-1.prod.workshops.aws/public/442d5fda-58ca-41f0-9fbe-558b6ff4c71a/assets/workshop-assets.zip"; wget -O gitflow.zip "$ASSETURL"
 `
-![12](/home/david/Desktop/12.png)
+![12](./12.png)
 
 <br/>
 `unzip gitflow.zip -d gitflow-workshop/`
-![13](/home/david/Desktop/13.png)
+
+![13](./13.png)
 <br/>
 
 `cd gitflow-workshop`
 `git add -A`
 `git commit -m "Initial Commit"`
-![14](/home/david/Desktop/14.png)
+
+![14](./14.png)
+
 <br/>
 
 `git push origin master`
-![15](/home/david/Desktop/15.png)
+
+![15](./15.png)
+
 <br/>
 
 ### Create Elastic Beanstalk Application
 
 - `aws cloudformation create-stack --template-body file://envcreate.yaml --parameters file://parameters.json --capabilities CAPABILITY_IAM --stack-name gitflow-eb-master
 
-![16](/home/david/Desktop/16.png)
+![16](./16.png)
 
 <br/>
 
@@ -100,11 +105,11 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
-![40](/home/david/Desktop/40.png)
+![40][./40.png)
 
 <br/>
 
-![41](/home/david/Desktop/41.png)
+![41](./41.png)
 
 <br/>
 
@@ -112,74 +117,75 @@ You should create a directory inside your DevOps Mentorship Program repo and all
 
 <br/>
 
-![17](/home/david/Desktop/17.png)
+![17](./17.png)
 
 <br/>
 
-![18](/home/david/Desktop/18.png)
+![18](./18.png)
 
 <br/>
 
 ## Elastic BeanStalk
 
-![19](/home/david/Desktop/19.png)
+![19](./19.png)
 
 <br/>
 
-![20](/home/david/Desktop/20.png)
+![20](./20.png)
 
 <br/>
 
-![21](/home/david/Desktop/21.png)
+![21](./21.png)
 
 <br/>
 
-![22](/home/david/Desktop/22.png)
+![22](./22.png)
 
 <br/>
 
-![23](/home/david/Desktop/23.png)
+![23](./23.png)
 
 <br/>
 
-![24](/home/david/Desktop/24.png)
+![24](./24.png)
 
 <br/>
 
-![25](/home/david/Desktop/25.png)
+![25](./25.png)
 
 <br/>
 
-![26](/home/david/Desktop/26.png)
+![26](./26.png)
 
 <br/>
 
-![27](/home/david/Desktop/27.png)
+![27](./27.png)
 
 <br/>
 
-![28](/home/david/Desktop/28.png)
+![28](./28.png)
 
 ## CodePipeline
 
 <br/>
 
-![29](/home/david/Desktop/29.png)
+![29](./29.png)
 
 <br/>
 
-![30](/home/david/Desktop/30.png)
+![30](./30.png)
 
 <br/>
 
-![33](/home/david/Desktop/33.png)
+![33](./33.png)
 
 <br/>
 
-![34](/home/david/Desktop/34.png)
+![34](./34.png)
 
 <br/>
+- Final web page 
 
-![35](/home/david/Desktop/35.png)
+![35](./35.png)
 
 
