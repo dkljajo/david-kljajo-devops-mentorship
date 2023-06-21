@@ -7,10 +7,10 @@
 
 ## Setup AWS Cloud9 IDE
 
-![1](/home/david/Desktop/Task-13/1.png)
+![1](./1.png)
 
 
-![2](/home/david/Desktop/Task-13/2.png)
+![2](./2.png)
 
 * * *
 
@@ -43,7 +43,7 @@ Now that we have our Cloud9 development environment up and running, let's create
     -DinteractiveMode=false`
 	
 
-![3](/home/david/Desktop/Task-13/3.png)
+![3](./3.png)
 
 * * *
 # Lab 1: AWS CodeCommit
@@ -52,7 +52,7 @@ Now that we have our Cloud9 development environment up and running, let's create
 
 ### Create a Repository
 
-![5](/home/david/Desktop/Task-13/5.png)
+![5](./5.png)
 
 ### Commit your Code
 
@@ -74,7 +74,7 @@ Now that we have our Cloud9 development environment up and running, let's create
 
 `git push -u origin main`
 
-![6](/home/david/Desktop/Task-13/6.png)
+![6](./6.png)
 
 * * *
 # Lab 2: AWS CodeArtifact
@@ -84,7 +84,7 @@ Now that we have our Cloud9 development environment up and running, let's create
 
 #### Create Domain and Repository
 
-![7](/home/david/Desktop/Task-13/7.png)
+![7](./7.png)
 
 ### Connect the CodeArtifact repository
 
@@ -94,15 +94,15 @@ Now that we have our Cloud9 development environment up and running, let's create
 
 `echo $'<settings>\n</settings>' > settings.xml`
 
-![13](/home/david/Desktop/Task-13/13.png)
+![8](./8.png)
 
 `mvn -s settings.xml compile`
 
-![9](/home/david/Desktop/Task-13/9.png)
+![9](./9.png)
 
 ### IAM Policy for consuming CodeArtifact
 
-![10](/home/david/Desktop/Task-13/10.png)
+![10](./10.png)
 
 * * *
 # AWS CodeBuild
@@ -115,7 +115,7 @@ Now that we have our Cloud9 development environment up and running, let's create
 
 ### buildspec.yml
 
-![11](/home/david/Desktop/Task-13/11.png)
+![11](./11.png)
 
 `cd ~/environment/unicorn-web-project`
 
@@ -125,7 +125,7 @@ Now that we have our Cloud9 development environment up and running, let's create
 
 `git push -u origin main`
 
-![12](/home/david/Desktop/Task-13/12.png)
+![12](./12.png)
 
 `cd ~/environment/unicorn-web-project`
 `git add *`
@@ -134,15 +134,15 @@ Now that we have our Cloud9 development environment up and running, let's create
 
 - edited buildspec.yml:
 
-![14](/home/david/Desktop/Task-13/14.png)
+![14](./14.png)
 
 - CodeBuild successfully finished:
 
-![15](/home/david/Desktop/Task-13/15.png)
+![15](./15.png)
 
 - So we verify that we  have a packaged WAR file inside a zip named unicorn-web-project.zip:
 
-![16](/home/david/Desktop/Task-13/16.png)
+![16](./16.png)
 
 * * *
 # 4. AWS CodeDeploy
@@ -159,30 +159,30 @@ Now that we have our Cloud9 development environment up and running, let's create
 
 - Successfully created CloudFormation Stack:
 
-![28](/home/david/Desktop/Task-13/28.png)
+![28](./28.png)
 
 
  - Shell scripts:
 * * *
 1.
 
-![19](/home/david/Desktop/Task-13/19.png)
+![19](./19.png)
 
 2. 
 
-![20](/home/david/Desktop/Task-13/20.png)
+![20](./20.png)
 
 3.
 
-![21](/home/david/Desktop/Task-13/21.png)
+![21](./21.png)
 
 4.
 
-![22](/home/david/Desktop/Task-13/22.png)
+![22](./22.png)
 
 - edited bulidspac.yml file:
 
-![23](/home/david/Desktop/Task-13/23.png)
+![23](./23.png)
 
 - commit all changes to CodeCommit:
 
@@ -193,16 +193,16 @@ Now that we have our Cloud9 development environment up and running, let's create
 
 - output push on main branch:
 
-![29](/home/david/Desktop/Task-13/29.png)
+![29](./29.png)
 
 - Updated CodeBuild configuration successfully completed:
 
-![24](/home/david/Desktop/Task-13/24.png)
+![24](./24.png)
 
 
 - Added new CodeDeploy IAM Role:
 
-![25](/home/david/Desktop/Task-13/25.png)
+![25](./25.png)
 
 ## Create a CodeDeploy application
 
@@ -220,18 +220,18 @@ Install AWS CodeDeploy Agent = Now and schedule updates (14 days)
 Deployment settings = CodeDeployDefault.AllAtOnce
 Load balancer = Uncheck Enable load balancing (we just have one server)
 
-![26](/home/david/Desktop/Task-13/26.png)
+![26](./26.png)
 
 
 - Created unicorn-web-deploy-group:
 
-![27](/home/david/Desktop/Task-13/27.png)
+![27](./27.png)
 
 - Successfully created code deploy of application:
 
-![30](/home/david/Desktop/Task-13/30.png)
+![30](./30.png)
 
-![31](/home/david/Desktop/Task-13/31.png)
+![31](./31.png)
 * * *
 
 # 5. Lab 5: AWS CodePipeline
@@ -248,24 +248,28 @@ Load balancer = Uncheck Enable load balancing (we just have one server)
 
 - Output stack after update:
 
-![32](/home/david/Desktop/Task-13/32.png)
+![32](./32.png)
 
 ## Add an additional CodeDeploy deployment group
 
-![33](/home/david/Desktop/Task-13/33.png)
+![33](./33.png)
 
 - SNS Subscription :
 
-![34](/home/david/Desktop/Task-13/34.png)
+![34](./34.png)
+
+- E-mail approval notification for manual execution CI/CD pipeline:
+
+![50](/./50.png)
 
 - Complete CI/CD Pipeline with manual approval :
 
-![35](/home/david/Desktop/Task-13/35.png)
+![35](./35.png)
 
 
 - Deploy process on EC2 instance:
 
-![36](/home/david/Desktop/Task-13/36.png)
+![36](./36.png)
 * * *
 # Clean all AWS resources!
 * * *
