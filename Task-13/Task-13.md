@@ -260,7 +260,7 @@ Load balancer = Uncheck Enable load balancing (we just have one server)
 
 - E-mail approval notification for manual execution CI/CD pipeline:
 
-![50](/./50.png)
+![50](./50.png)
 
 - Complete CI/CD Pipeline with manual approval :
 
