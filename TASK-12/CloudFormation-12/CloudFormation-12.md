@@ -91,14 +91,14 @@ Outputs:
 
 * * *
 
-![13](/home/david/Desktop/CloudFormation-12/13.png)
+![13](./13.png)
 
  - Uspjesno kreiran stack:
 
-![14](/home/david/Desktop/CloudFormation-12/14.png)
+![14](./14.png)
 
  - Uspjesno kreirani web server i db server:
 
-![16](/home/david/Desktop/CloudFormation-12/16.png)
+![16](./16.png)
 
 
