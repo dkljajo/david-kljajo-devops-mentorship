@@ -30,7 +30,7 @@
 }
 ```
 
-![3](/home/david/Desktop/Packer/3.png)
+![3](./3.png)
 
 * * *
 ## Packer - task 12
@@ -39,21 +39,21 @@
 - Packer tool is used to create Custom AMI image from Amazon Linux 3 AMI, where it is necessary to install and enable necessary yum repositories for nginx and mysql database installation.
 
 - packer-provisioners.json :
-![7](/home/david/Desktop/Packer/7.png)
+![7](./7.png)
 
 - install-mysql.sh:
 
-![9](/home/david/Desktop/Packer/9.png)
+![9](./9.png)
 
 -  instal-nginx.sh
 -
-![10](/home/david/Desktop/Packer/10.png)
+![10](./10.png)
 
  - Building Packer AMI successfulll:
 
-![11](/home/david/Desktop/Packer/11.png)
+![11](./11.png)
 
 - Created ec2 instance of web sever with nginx sever and MySQL database:
 
-![12](/home/david/Desktop/Packer/12.png)
+![12](./12.png)
 
