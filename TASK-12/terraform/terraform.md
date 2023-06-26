@@ -57,7 +57,7 @@ resource "aws_security_group" "webserver-sg" {
 ```
 
 
-![20](/home/david/Desktop/terraform/20.png)
+![20](./20.png)
 
 
 ### Kreiranje EC2 instanci
@@ -65,9 +65,9 @@ resource "aws_security_group" "webserver-sg" {
 - All code is available :
 -  `terraform/Default/main.tf`
 
-![21](/home/david/Desktop/terraform/21.png)
+![21](./21.png)
 
-![22](/home/david/Desktop/terraform/22.png)
+![22](./22.png)
 
 ## Terraform commands:
 
