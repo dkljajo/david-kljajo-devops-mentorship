@@ -12,6 +12,17 @@ For task 12 you need to do following:
  [Ansible] By using ansible provisioner install nginx web server on task-12-web-server-cf and task-12-web-server-tf instances. By using ansilbe provisioner install mysql database on task-12-db-server-cf and task-12-db-server-tf instances.
 You need to ensure that once when nginx is instaled that it is enabled and started. Same goes for mysql database. Also your nginx web server instances needs to have index.html file with content Hello from nginx web server created using CloudFormation and Ansible Hello from nginx web server created using Terrafrom and Ansible.
 
+﻿# 1. Packer
+* * *
+
+- Packer is part of the HashiCorp open source suite of toools.
+- It is an open source command-line tool that allows us to create custom VM images of any OS on several platforms from a JSON file.
+- Packer's operation is simple and it is based on the basic OS provided by the different cloud providers and configures a temporary VM by executing the scripts described in the JSON or HCL template.
+- From this temporary VM, Packer generates a custom image ready to be used to provision VMs.
+- Apart from VM images, Packer also provides other types of images such as Docker images.
+* * *
+
+
 
 # 4. Ansible
 * * *
