@@ -1,0 +1,28 @@
+---
+- name: Add EC2 instance public IDs to inventory
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    ec2_region: "us-east-1"  
+    ec2_instance_tags:
+      - Key: "Project"  
+        Values:
+          - "ed25519"  # Modify with your desired tag value
+    inventory_path: "~/ansible_playbooks/inventory/prod.ini"  
+
+  tasks:
+    - name: Get EC2 instance public IDs
+      ec2_instance_info:
+        region: "{{ ec2_region }}"
+        filters:
+            "tag:Key": "Project"
+            "tag:Value": "task-12"
+        profile: "david.kljajo"
+      register: ec2_instances
+
+    - name: Add EC2 instance public IDs to inventory file
+      lineinfile:
+        path: "{{ inventory_path }}"
+        line: "{{ item.public_ip_address }}"
+      loop: "{{ ec2_instances.instances }}"
