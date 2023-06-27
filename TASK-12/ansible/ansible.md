@@ -100,13 +100,13 @@ The dynamic inventory is used if we do not have the addresses of the hosts.**
 
 - Izmjena index.html fajla na task-12-web-server-cf instanci
 
-![60](/home/david/Desktop/ansible/60.png)
+![60](./60.png)
 
-![61](/home/david/Desktop/ansible/61.png)
+![61](./61.png)
 
   - Izmjena index.html fajla na task-12-web-server-tf instanci
 
-![62](/home/david/Desktop/ansible/62.png)
+![62](./62.png)
 
 ## Instalacija mysql na db server instance
 
@@ -114,31 +114,31 @@ The dynamic inventory is used if we do not have the addresses of the hosts.**
     
 - Nakon ovoga imamo instaliran mysql na db server instancama:
 
-![63](/home/david/Desktop/ansible/63.png)
+![63](./63.png)
 
-![64](/home/david/Desktop/ansible/64.png)
+![64](./64.png)
 
-![65](/home/david/Desktop/ansible/65.png)
+![65](./65.png)
 
-![66](/home/david/Desktop/ansible/66.png)
+![66](./66.png)
 * * *
 
 - **Nakon ovoga imamo instaliran mysql na db server instancama:**
 
-![67](/home/david/Desktop/ansible/67.png)
+![67](./67.png)
 
 - Defaultna baza na ec2 instanci:
 
-![68](/home/david/Desktop/ansible/68.png)
+![68](./68.png)
 
 - uspjesno pokrenut playbook : `02-mysql-configure-playbook.yml`
 
 
-![69](/home/david/Desktop/ansible/69.png)
+![69](./69.png)
 
 - Uspjesno kreirana nova baza `task-12-db` : 
 
-![70](/home/david/Desktop/ansible/70.png)
+![70](./70.png)
 
 
 
