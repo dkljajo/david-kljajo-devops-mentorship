@@ -12,7 +12,8 @@ For task 12 you need to do following:
  [Ansible] By using ansible provisioner install nginx web server on task-12-web-server-cf and task-12-web-server-tf instances. By using ansilbe provisioner install mysql database on task-12-db-server-cf and task-12-db-server-tf instances.
 You need to ensure that once when nginx is instaled that it is enabled and started. Same goes for mysql database. Also your nginx web server instances needs to have index.html file with content Hello from nginx web server created using CloudFormation and Ansible Hello from nginx web server created using Terrafrom and Ansible.
 
-﻿# 1. Packer
+
+# 1. Packer
 * * *
 
 - Packer is part of the HashiCorp open source suite of toools.
@@ -22,6 +23,14 @@ You need to ensure that once when nginx is instaled that it is enabled and start
 - Apart from VM images, Packer also provides other types of images such as Docker images.
 * * *
 
+# 2. CloudFormation
+
+- CloudFormation is a method of provisioning AWS infrastructure using code. 
+- It allows you to model a collection of related resources, both AWS and third party, to provision them quickly and consistently. 
+- AWS CloudFormation also provides you with a mechanism to manage the resources through their lifecycle.
+
+- The created CF stack template is available in the cloudformation directory under the name cf-instances.yaml
+- The following is an explanation of individual parts of the code:
 
 
 # 4. Ansible
