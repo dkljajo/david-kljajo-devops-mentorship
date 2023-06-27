@@ -32,6 +32,18 @@ You need to ensure that once when nginx is instaled that it is enabled and start
 - The created CF stack template is available in the cloudformation directory under the name cf-instances.yaml
 - The following is an explanation of individual parts of the code:
 
+# 3. Terraform
+* * *
+
+- Terraform is a command-line tool that, in its basic version, is open source, uses the **HashiCorp Configuration Language (HCL)** , is declarative, and is relatively easy to read.
+- Its main advantage in the use of the same language to deploy on a multitude of cloud providers such as AWS, Google and Azure.
+- Terraform has other advantages:
+1. **It is multiplatform**, and it can be installed on Windows, Linux and Mac.
+2. **It allows a preview of infrastructure changes before they are implemented.**
+3. **It allows parallelization of operations by considering resource dependencies.**
+4. **It integrates a very large number of providers.**
+
+* * *
 
 # 4. Ansible
 * * *
